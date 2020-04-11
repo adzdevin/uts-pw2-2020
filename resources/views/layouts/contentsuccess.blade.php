@@ -63,9 +63,9 @@
                                         <div class="main-card mb-3 card">
                                             <div class="card-body"><h5 class="card-title">Detail Produk</h5>
                                                 <ul>
-                                                    <li>Nama Produk: xxx</li>
-                                                    <li>Kategori: xxx</li>
-                                                    <li>Harga: xxx</li>
+                                                    <li>Nama Produk: <?=$data_baru['nama_produk'];?></li>
+                                                    <li>Kategori: <?=$data_baru['kategori'];?></li>
+                                                    <li>Harga: <?=$data_baru['harga'];?></li>
                                                 </ul>
                                             </div>
                                         </div>

@@ -17,13 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/success', function () {
+    return view('success');
+});
+
+Route::get('/index', 'ProdukController@index');
+
 Route::get('/form', function () {
     return view('form');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
-Route::get('/success', function () {
-    return view('success');
-});
+Route::post('/proses-form', 'ProdukController@tambah')->name('proses-form');
+
+Route::get('/success', 'ProdukController@detail')->name('success');

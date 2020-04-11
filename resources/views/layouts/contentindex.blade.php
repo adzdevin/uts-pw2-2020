@@ -69,12 +69,17 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td>xxx</td>
-                                                            <td>xxx</td>
-                                                            <td>xxx</td>
-                                                            <td>xxx</td>
-                                                        </tr>
+                                                    <?php
+$i = 1;
+foreach ($produk as $p) {
+    echo '<tr>';
+    echo '<td>' . $i . '</td>';
+    echo '<td>' . $p['nama_produk'] . '</td>';
+    echo '<td>' . $p['kategori'] . '</td>';
+    echo '<td>' . $p['harga'] . '</td>';
+    echo '</tr>';
+    $i++;
+}?>
                                                     </tbody>
                                                 </table>
                                             </div>
